@@ -1,8 +1,10 @@
 # Reinforcement Learning-Based Adaptive PID Controller for DPS
-<p align="center">
+<p align="right">
 <img width="1159" height="400" src=".images/thumbnail.png">
 </p>
+
 &nbsp;
+
 ## What is it?
 ---
 Python code for implementation of the paper **'Reinforcement Learning-Based Adaptive PID Controller for DPS'**.
