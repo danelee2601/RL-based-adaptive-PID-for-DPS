@@ -1,6 +1,6 @@
 # Reinforcement Learning-Based Adaptive PID Controller for DPS
-<p align="right">
-<img width="1159" height="400" src=".images/thumbnail.png">
+<p align="center">
+<img width="737" height="370" src=".images/thumbnail2.png">
 </p>
 
 &nbsp;
