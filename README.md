@@ -29,7 +29,7 @@ Software:
 1. set `self.TEST = False` in `DP/DP_DDPG/settings.py`
 2. open `DP/DP_DDPG/DDPG_based_DPS.dat`
 3. run dynamic simulation
-4. check the training results in `DP/results/train/reward_func_case1`
+4. check the training results in `DP/results/train/reward_func_case1`<br>
  *description for the results is documented in `DP/results/README.md`
 
 #### Test the trained proposed controller
@@ -45,37 +45,30 @@ Software:
 
 ## Detailed Settings
 #### Training
-* environmental condition
-
+* environmental condition<br>
     in `DP/DDPG/DDPG_based_DPS.dat`, you can change the environmental condition. In the same way, the environmental condition for the testing can be set.
 
-* hyper-parameters for the DDPG
-
+* hyper-parameters for the DDPG<br>
     the hyper-parameters are stated below '# params for ddpg' in `DP/DP_DDPG/settings.py`
 
-* use of the fixed P, D base gains (= not to use the adaptive P, D gains
-
+* use of the fixed P, D base gains (= not to use the adaptive P, D gains<br>
     set `self.use_max_PD_gains = True` in `DP/DP_DDPG/settings.py`
 
-* use of the fixed I base gains (= not to use the adaptive I gains
 
+use of the fixed I base gains (= not to use the adaptive I gains<br>
     set `self.use_max_I_gain = True` in `DP/DP_DDPG/settings.py`
 
-* use of the update-gates for the integral of the errors
-
+* use of the update-gates for the integral of the errors<br>
     set `self.use_gate_err_accumulation = True` in `DP/DP_DDPG/settings.py`
 
-* neural network (NN) architecture
-
-    NN architecture with batch normalization: `DP/baselines/ddpg/ddpg_simple_bn_only.py`
-    NN architecture without batch normalization: `DP/baselines/ddpg/ddpg_simple.py`
+* neural network (NN) architecture<br>
+    NN architecture with batch normalization: `DP/baselines/ddpg/ddpg_simple_bn_only.py`<br>
+    NN architecture without batch normalization: `DP/baselines/ddpg/ddpg_simple.py`<br>
     *the above models can be switched by `self.use_bn` in `DP/DP_DDPG/settings.py`
 
 #### PID controller with the fixed base gain
-* environmental condition
-
+* environmental condition<br>
     in `DP/DP_ZN/ZN_based_DPS.dat`, you can change the environmental condition.
 
-* fixed base gains
-
+* fixed base gains<br>
     in `DP/DP_ZN/ZN_based_DPS.dat`, there is 'Vessel1' under a 'Vessels' directory. Under a tag named 'Tags' in the 'Vessel1', you can access 'ExternalFunctionParameters' where you can see the fixed base PID gains. ( If you change the fixed base gains in `DP/DP_ZN/ZN_based_DPS.dat`, you should change the `self.ZN_gains` in `DP/DP_DDPG/settings.py` accordingly. )
