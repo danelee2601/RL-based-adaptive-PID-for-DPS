@@ -1,5 +1,7 @@
 # Reinforcement Learning-Based Adaptive PID Controller for DPS
+<p align="center">
 ![thumbnail](/.images/thumbnail.png)
+</p>
 &nbsp;
 ## What is it?
 ---
