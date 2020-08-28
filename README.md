@@ -6,11 +6,9 @@
 &nbsp;
 
 ## What is it?
----
 Python code for implementation of the paper **'Reinforcement Learning-Based Adaptive PID Controller for DPS'**.
 
 ## Dependencies
----
 Python libraries:
 * numpy
 * pandas
@@ -21,14 +19,12 @@ Software:
 * [OrcaFlex](https://www.orcina.com/orcaflex/) developed by Orcina (version-10.3 is used in the paper) [NOTE: its license is required to use the OrcaFlex]
 
 ## Installation
----
 1. download [the *zip* file](https://github.com/danelee2601/RL-based-adaptive-PID-for-DPS/archive/master.zip) or do `git clone ...` and save in your directory
 2. `pip install` all the libraries for the dependency
 3. check if the OrcaFlex recognizes Python (otherwise, read an [OrcaFlex's documentation for Python API](https://www.orcina.com/webhelp/OrcFxAPI/Default.htm))
 4. move the file `DP/dp_force_source/dp_force_windff.cp37-win_amd64.pyd` to the `Lib` directory where your python is installed
 
 ## Quick Start
----
 #### Train the proposed controller
 1. set `self.TEST = False` in `DP/DP_DDPG/settings.py`
 2. open `DP/DP_DDPG/DDPG_based_DPS.dat`
@@ -48,7 +44,6 @@ Software:
 3. check the results in `DP/results/ZN/temp`
 
 ## Detailed Settings
----
 #### Training
 * environmental condition:
     in `DP/DDPG/DDPG_based_DPS.dat`, you can change the environmental condition. In the same way, the environmental condition for the testing can be set.
