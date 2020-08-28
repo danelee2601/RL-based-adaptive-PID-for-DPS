@@ -54,8 +54,7 @@ Software:
 * use of the fixed P, D base gains (= not to use the adaptive P, D gains<br>
     set `self.use_max_PD_gains = True` in `DP/DP_DDPG/settings.py`
 
-
-use of the fixed I base gains (= not to use the adaptive I gains<br>
+* use of the fixed I base gains (= not to use the adaptive I gains<br>
     set `self.use_max_I_gain = True` in `DP/DP_DDPG/settings.py`
 
 * use of the update-gates for the integral of the errors<br>
